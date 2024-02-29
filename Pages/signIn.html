@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+    <link rel="stylesheet" href="../scripts/validation.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <a href="../index.html"><img src="../Assets/Logo/house.png" alt="" width="40px" height="40px"></a>
+            <img class="sandwich" src="../Assets/Logo/menu-bar.png" alt="" width="30px" height="30px">
+        </div>
+        <div class="navBar">
+            <ul>
+                <li><a href="../index.html">Home</a></li>
+                <li>About</li>
+                <li>Contacts</li>
+                <li>Menu</li>
+                <li>Products</li>
+            </ul>
+        </div>
+    </header>
+    <div class="bodyArea3">
+        <!-- action="ToDoList.html" -->
+        <form name="SignIn_Form" onsubmit="SignInvalidateForm(event)" >
+            <h1>LOGIN HERE</h1>
+            <div class="contentdiv">
+                <label for="userid">User Name / Email</label>
+                <input type="text" id="userid" name="userid">
+            </div>
+            <div class="contentdiv">
+                <label for="pass">Password</label>
+                <input type="password" id="pass" name="Password">
+            </div>
+            <div class="buttondiv">
+                <button type="submit">Login</button>
+            </div>
+        </form>
+    </div>
+    <script src="../scripts/validation.js"></script>
+</body>
+</html>

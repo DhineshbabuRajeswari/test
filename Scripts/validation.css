@@ -1,0 +1,621 @@
+@import url('https://fonts.googleapis.com/css2?family=Anta&display=swap');
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: "Anta", sans-serif;
+}
+
+body{
+    padding: 0;
+    margin: 0;
+}
+
+header{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 2rem;
+    height: 5rem;
+    background-color: rgb(4, 2, 39);
+    color: white;
+}
+
+.logo{
+    width: 40%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+}
+
+.logo a img{
+    cursor: pointer;
+}
+
+.logo img{
+    cursor: pointer;
+}
+
+.navBar{
+    width: 60%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.navBar ul{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.navBar ul li{
+    list-style-type: none;
+    padding: 0 1rem;
+    cursor: pointer;
+}
+
+.navBar ul li a{
+    text-decoration: none;
+    color: white;
+}
+
+.sandwich{
+    display: none;
+}
+
+.bodyArea{
+    width: 100%;
+    min-height: 90vh;
+    background: radial-gradient(circle, #00e5ff, #15008c);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.bodyArea p{
+    color: white;
+    font-size: 2.5rem;
+    margin-top: 5rem;
+}
+
+.bodyArea p span{
+    font-size: 2.7rem;
+    color: rgb(255, 0, 0);
+    text-shadow: 2px 2px 2px black;
+}
+
+.products{
+    width: 100%;
+}
+
+#uli{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 2rem;
+    /* grid-auto-flow: column; */
+    place-items: center;
+    align-items: center;
+    justify-content: center;
+}
+
+#uli li{
+    width: 30rem;
+    height: 40rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card{
+    width: 20rem;
+    height: 30rem;
+    display: flex;
+    flex-direction: column;
+    margin: 2rem 0;
+    background-color: #ffffff;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 2px 4px 2px black;
+    border-radius: 12px;
+}
+
+.card:hover{
+    background-color: #ffecb3;
+}
+
+.card:hover .cardimg img{
+    border-radius: 8px;
+    box-shadow: 2px 4px 2px black;
+}
+
+.cardimg{
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.cardimg img{
+    width: 15rem;
+    height: 18rem;
+}
+
+.card span{
+    padding: 1rem;
+    text-wrap: wrap;
+    height: 10%;
+}
+
+.logButtons{
+    display: flex;
+    flex-direction: row;
+    width: 20rem;
+    height: 5rem;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 3rem;
+}
+
+.logButtons a button{
+    width: 8rem;
+    height: 2.7rem;
+    border: none;
+    outline: none;box-shadow: 2px 4px 2px black;
+    font-size: 1.1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+    color: white;
+    text-shadow: 2px 2px 2px black;
+}
+
+#btn1{
+    background-color: rgb(7, 7, 139);
+}
+
+#btn1:hover{
+    background-color: rgb(41, 41, 200);
+}
+
+#btn1:active{
+    background-color: rgb(27, 27, 129);
+}
+
+#btn2{
+    background-color: rgb(23, 149, 40);
+}
+
+#btn2:hover{
+    background-color: rgb(27, 181, 47);
+}
+
+#btn2:active{
+    background-color: rgb(44, 134, 56);
+}
+
+
+/* Sign Up form */
+
+.bodyArea2{
+    width: 100%;
+    min-height: 110vh;
+    background: radial-gradient(circle, #00e5ff, #15008c);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.bodyArea2 form{
+    height: 100vh;
+    width: 30rem;
+    background: radial-gradient(#00e5ff, #15008c);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    padding: 5rem 0;
+    color: white;
+}
+
+.contentdiv{
+    width: 100%;
+    padding: 0 2rem;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 1rem 0;
+}
+
+.contentdiv input{
+    height: 1.8rem;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+}
+
+.contentdiv input:focus{
+    background-color: #a1e8ef;
+}
+
+.contentdiv textarea{
+    height: 6rem;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+}
+
+#radios{
+    justify-content: start;
+    gap: 1rem;
+}
+
+.buttondiv{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 1rem;
+}
+
+.buttondiv button{
+    width: 8rem;
+    height: 2.7rem;
+    border: none;
+    outline: none;box-shadow: 2px 4px 2px black;
+    font-size: 1.1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+    color: white;
+    text-shadow: 2px 2px 2px black;
+    background-color: rgb(7, 7, 139);
+}
+
+.buttondiv button:hover{
+    background-color: rgb(41, 41, 200);
+}
+
+.buttondiv button:active{
+    background-color: rgb(27, 27, 129);
+}
+
+/* Sign in form */
+
+.bodyArea3{
+    width: 100%;
+    height: 90vh;
+    background: radial-gradient(circle, #00e5ff, #15008c);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.bodyArea3 form{
+    height: 65vh;
+    width: 25rem;
+    background: radial-gradient(#00e5ff, #15008c);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    padding: 5rem 0;
+    color: white;
+}
+
+.bodyArea3 form h1{
+    margin-bottom: 3rem;
+}
+
+/* TodoList */
+
+.bodyArea4{
+    width: 100%;
+    min-height: 90vh;
+    background: radial-gradient(circle, #00e5ff, #15008c);
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    flex-direction: column;
+    padding-top: 5rem;
+}
+
+.toDoList{
+    background: #0000001f;
+    border-radius: 12px;
+}
+
+.bodyArea4 form{
+    height: 25vh;
+    width: 25rem;
+    background: radial-gradient(#00e5ff, #15008c);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    padding: 5rem 0;
+    color: white;
+    gap: 2rem;
+    padding: 0;
+    margin: 0;
+}
+
+#addbtn{
+    width: 3rem;
+    height: 2rem;
+    background-color: rgb(35, 161, 35);
+    color: white;
+    border: none;
+    outline: none;
+    box-shadow: 2px 2px 2px black;
+    border-radius: 5px;
+}
+
+.inputsAdd{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.bodyArea4 form .inputsAdd input{
+    height: 2rem;
+    box-shadow: 2px 2px 2px black;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    width: 70%;
+}
+
+.removeBtn{
+    background-color: rgba(255, 255, 255, 0.511);
+    width: 1.5rem;
+    height: 1.5rem;
+    border: none;
+    /* box-shadow: 2px 2px 2px black; */
+    box-shadow: inset 2px 2px 2px #ffffff, 2px 2px 2px black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 1000;
+    border-radius: 50%;
+    font-size: 0.9rem;
+    color: rgb(255, 0, 0);
+}
+
+.outputs{
+    width: 100%;
+}
+
+.EleList{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.2rem 2rem;
+    color: white;
+    margin: 1rem 0;
+}
+
+.EleList span{
+    width: 15rem;
+    text-wrap: wrap;
+}
+
+.active{
+    display: flex !important;
+}
+
+#model{
+    position: fixed;
+    background-color: rgba(0, 0, 0, 0.803);
+    width: 80%;
+    height: 80%;
+    display: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#model span{
+    font-size: 2rem;
+    color: greenyellow;
+}
+
+#model.active{
+    display: flex;
+}
+
+#model2{
+    position: fixed;
+    background-color: rgba(0, 0, 0, 0.803);
+    width: 100%;
+    height: 130vh;
+    display: none;
+    display: flex;
+    align-items: start;
+    justify-content: center;
+}
+
+#model2 span{
+    margin-top: 15rem;
+    font-size: 2rem;
+    color: greenyellow;
+    padding: 0 1rem;
+}
+
+#model2.active{
+    display: flex;
+}
+
+@media (max-width:1200px) {
+
+    #uli{
+        grid-template-columns: repeat(2,1fr);
+    }
+
+    .card{
+        width: 19rem;
+        height: 25rem;
+        border-radius: 8px;
+        margin: 1rem 0;
+    }
+    
+    .cardimg img{
+        width: 12rem;
+        height: 15rem;
+    }
+}
+@media (max-width:680px) {
+    .sandwich{
+        display: block;
+        width: 35px;
+        height: 35px;
+    }
+
+    header{
+        flex-direction: column;
+        position: relative;
+        height: auto;
+    }
+
+    .logo{
+        width: 100%;
+        display: inline-flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .navBar{
+        margin-top: 2rem;
+        width: 100%;
+        display: none;
+    }
+
+    .navBar ul{
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .navBar ul li{
+        width: 100%;
+        padding: 1rem 0;
+    }
+
+    .bodyArea p{
+        font-size: 2rem;
+    }
+
+    .bodyArea p span{
+        font-size: 2.2rem;
+    }
+
+    .bodyArea3 form{
+        min-height: 65vh;
+        width: 20rem;
+    }
+
+    .bodyArea3 form h1,.bodyArea2 form h1{
+        font-size: 1.5rem;
+    }
+
+    .contentdiv input{
+        width: 9rem;
+    }
+
+    .buttondiv button{
+        width: 6rem;
+        height: 2.0rem;
+        font-size: 0.9rem;
+    }
+
+    .bodyArea2 form{
+        min-height: 90vh;
+        width: 25rem;
+    }
+
+    #radios input{
+        width: auto;
+        height: auto;
+    }
+
+    .bodyArea4 form{
+        width: 22rem;
+    }
+
+    #uli{
+        grid-template-columns: repeat(1,1fr);
+    }
+
+    .card{
+        width: 16rem;
+        height: 22rem;
+        border-radius: 8px;
+        margin: 0.5rem 0;
+    }
+
+    .cardimg img{
+        width: 10rem;
+        height: 12rem;
+    }
+
+    #uli li{
+        width: 25rem;
+        height: 28rem;
+    }
+}
+
+@media (max-width:576px) {
+    .bodyArea p{
+        font-size: 1.5rem;
+    }
+
+    .bodyArea p span{
+        font-size: 1.7rem;
+    }
+
+    .logButtons a button{
+        width: 6rem;
+        height: 2.0rem;
+        font-size: 1rem;
+    }
+
+    .logo a img{
+        width: 30px;
+        height: 30px;
+    }
+
+    .logo img{
+        width: 30px;
+        height: 30px;
+    }
+
+    #model span{
+        font-size: 1.5rem;
+        text-shadow: 1px 1px 1px rgb(255, 255, 255);
+    }
+
+    #model2 span{
+        font-size: 1.3rem;
+        text-shadow: 1px 1px 1px rgb(255, 255, 255);
+    }
+}

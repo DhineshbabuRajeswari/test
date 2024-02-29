@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+    <link rel="stylesheet" href="../scripts/validation.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <a href="../index.html"><img src="../Assets/Logo/house.png" alt="" width="40px" height="40px"></a>
+            <img class="sandwich" src="../Assets/Logo/menu-bar.png" alt="" width="30px" height="30px">
+        </div>
+        <div class="navBar">
+            <ul>
+                <li><a href="../index.html">Home</a></li>
+                <li>About</li>
+                <li>Contacts</li>
+                <li>Menu</li>
+                <li>Products</li>
+            </ul>
+        </div>
+    </header>
+    <div class="bodyArea2">  
+        <form name="Signup_Form" onsubmit="validateForm(event)" method="post">
+                <h1>SIGNUP HERE</h1>
+                <div class="contentdiv">
+                    <label for="ban">Firstname</label>
+                    <input type="text" id="ban" name="Firstname">
+                </div>
+                <div class="contentdiv">
+                    <label for="last">Lastname</label>
+                    <input type="text" id="last" name="Lastname">
+                </div>
+                <div class="contentdiv">
+                    <label for="pass">Password</label>
+                    <input type="password" id="pass" name="Password">
+                </div>
+                <div class="contentdiv">  
+                    <label for="repass">Re-Enter Password</label>
+                    <input type="password" id="repass" name="re-enter_password">
+                </div>
+                <div class="contentdiv">
+                    <label for="mobile">Mobile Number</label>
+                    <input type="text" id="mobile" name="Mobile">
+                </div>
+                <div class="contentdiv">
+                    <label for="mail">Email</label>
+                    <input type="text" id="mail" name="Mail">
+                </div>
+                <div class="contentdiv" id="radios">
+                    <span>Gender</span>
+                    <input type="radio" id="Male" name="gender" required>
+                    <label for="Male">Male</label>
+                    <input type="radio" id="Female" name="gender" required>
+                    <label for="Female">Female</label>
+                </div>
+                <div class="contentdiv">
+                    <label for="address">Address</label>
+                    <textarea id="address" name="Address"></textarea>
+                </div>
+                <div class="buttondiv">
+                    <button type="submit">Submit</button>
+                </div>
+            </div>
+        </form>
+    </div>
+    <script src="../scripts/validation.js"></script>
+</body>
+</html>
